@@ -33,27 +33,33 @@ Protocols:
         train:
             uri: ami_diarization_setup/lists/train.meetings.txt # list of all training sessions
             annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
+            lab: ami_diarization_setup/only_words/labs/train/{uri}.lab # lab contains the utterance duration labels
             annotated: ami_diarization_setup/uems/train/{uri}.uem
         dev:
             uri: ami_diarization_setup/lists/dev.meetings.txt
             annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
+            lab: ami_diarization_setup/only_words/labs/dev/{uri}.lab
             annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
             uri: ami_diarization_setup/lists/test.meetings.txt
             annotation: ami_diarization_setup/only_words/rttms/test/{uri}.rttm
+            lab: ami_diarization_setup/only_words/labs/test/{uri}.lab
             annotated: ami_diarization_setup/uems/test/{uri}.uem
       mini:
         train:
           uri: ami_diarization_setup/lists/train.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
+          lab: ami_diarization_setup/only_words/labs/train/{uri}.lab
           annotated: ami_diarization_setup/uems/train/{uri}.uem
         dev:
           uri: ami_diarization_setup/lists/dev.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
+          lab: ami_diarization_setup/only_words/labs/dev/{uri}.lab
           annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
           uri: ami_diarization_setup/lists/test.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/test/{uri}.rttm
+          lab: ami_diarization_setup/only_words/labs/test/{uri}.lab
           annotated: ami_diarization_setup/uems/test/{uri}.uem
 
   AMI:
@@ -62,40 +68,49 @@ Protocols:
         train:
             uri: ami_diarization_setup/lists/train.meetings.txt
             annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
+            lab: ami_diarization_setup/only_words/labs/train/{uri}.lab
             annotated: ami_diarization_setup/uems/train/{uri}.uem
         dev:
             uri: ami_diarization_setup/lists/dev.meetings.txt
             annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
+            lab: ami_diarization_setup/only_words/labs/dev/{uri}.lab
             annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
             uri: ami_diarization_setup/lists/test.meetings.txt
             annotation: ami_diarization_setup/only_words/rttms/test/{uri}.rttm
+            lab: ami_diarization_setup/only_words/labs/test/{uri}.lab
             annotated: ami_diarization_setup/uems/test/{uri}.uem
 
       mini:
         train:
           uri: ami_diarization_setup/lists/train.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
+          lab: ami_diarization_setup/only_words/labs/train/{uri}.lab
           annotated: ami_diarization_setup/uems/train/{uri}.uem
         dev:
           uri: ami_diarization_setup/lists/dev.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
+          lab: ami_diarization_setup/only_words/labs/dev/{uri}.lab
           annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
           uri: ami_diarization_setup/lists/test.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/test/{uri}.rttm
+          lab: ami_diarization_setup/only_words/labs/test/{uri}.lab
           annotated: ami_diarization_setup/uems/test/{uri}.uem
  
       word_and_vocalsounds:
         train:
             uri: ami_diarization_setup/lists/train.meetings.txt
             annotation: ami_diarization_setup/word_and_vocalsounds/rttms/train/{uri}.rttm
+            lab: ami_diarization_setup/word_and_vocalsounds/labs/train/{uri}.lab
             annotated: ami_diarization_setup/uems/train/{uri}.uem
         dev:
             uri: ami_diarization_setup/lists/dev.meetings.txt
             annotation: ami_diarization_setup/word_and_vocalsounds/rttms/dev/{uri}.rttm
+            lab: ami_diarization_setup/word_and_vocalsounds/labs/dev/{uri}.lab
             annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
             uri: ami_diarization_setup/lists/test.meetings.txt
             annotation: ami_diarization_setup/word_and_vocalsounds/rttms/test/{uri}.rttm
+            lab: ami_diarization_setup/word_and_vocalsounds/labs/test/{uri}.lab
             annotated: ami_diarization_setup/uems/test/{uri}.uem
