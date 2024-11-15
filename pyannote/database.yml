@@ -34,7 +34,7 @@ Protocols:
             uri: ami_diarization_setup/lists/train.meetings.txt # list of all training sessions
             annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
             annotated: ami_diarization_setup/uems/train/{uri}.uem
-        development:
+        dev:
             uri: ami_diarization_setup/lists/dev.meetings.txt
             annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
             annotated: ami_diarization_setup/uems/dev/{uri}.uem
@@ -47,7 +47,7 @@ Protocols:
           uri: ami_diarization_setup/lists/train.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
           annotated: ami_diarization_setup/uems/train/{uri}.uem
-        development:
+        dev:
           uri: ami_diarization_setup/lists/dev.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
           annotated: ami_diarization_setup/uems/dev/{uri}.uem
@@ -63,7 +63,7 @@ Protocols:
             uri: ami_diarization_setup/lists/train.meetings.txt
             annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
             annotated: ami_diarization_setup/uems/train/{uri}.uem
-        development:
+        dev:
             uri: ami_diarization_setup/lists/dev.meetings.txt
             annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
             annotated: ami_diarization_setup/uems/dev/{uri}.uem
@@ -77,7 +77,7 @@ Protocols:
           uri: ami_diarization_setup/lists/train.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
           annotated: ami_diarization_setup/uems/train/{uri}.uem
-        development:
+        dev:
           uri: ami_diarization_setup/lists/dev.mini.txt
           annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
           annotated: ami_diarization_setup/uems/dev/{uri}.uem
@@ -91,7 +91,7 @@ Protocols:
             uri: ami_diarization_setup/lists/train.meetings.txt
             annotation: ami_diarization_setup/word_and_vocalsounds/rttms/train/{uri}.rttm
             annotated: ami_diarization_setup/uems/train/{uri}.uem
-        development:
+        dev:
             uri: ami_diarization_setup/lists/dev.meetings.txt
             annotation: ami_diarization_setup/word_and_vocalsounds/rttms/dev/{uri}.rttm
             annotated: ami_diarization_setup/uems/dev/{uri}.uem
