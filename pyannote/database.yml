@@ -1,7 +1,27 @@
+# This file is adapted from: 
+# https://github.com/pyannote/AMI-diarization-setup/blob/main/pyannote/database.yml
+# 
+# Configurations for the paths to wav, rttm, and uem files.
+# Usage:
+#   {uri} is a placeholder for the session name (or utter id in Kaldi style e.g. ES2004c).
+#   you might need to update this line to fit your own setup.
+#   For example, in python code:
+#     import yaml
+#     with open('database.yml', 'r') as f:
+#         database = yaml.safe_load(f)
+#     databases = database['Databases']
+#     protocols = database['Protocols']
+#     uri = 'ES2004c'
+#     wav_path = databases['AMI'].format(uri=uri) # amicorpus/ES2004c/audio/ES2004c.Mix-Headset.wav
+# Note: (refer to https://github.com/pyannote/pyannote-database?tab=readme-ov-file#speaker-diarization-1)
+#   - "uri" key (mandatory) that provides a unique file identifier (usually the filename),
+#   - "annotation" key (mandatory for train and development subsets) that provides reference 
+#     speaker diarization, i.e. the rttm file.
+#   - "annotated" key (recommended) that describes which part of the file has been annotated, 
+#     Any part of "annotation" that lives outside of the provided "annotated" will be removed.
+
 Databases:
-  # tell pyannote.database where to find AMI wav files.
-  # {uri} is a placeholder for the session name (eg. ES2004c).
-  # you might need to update this line to fit your own setup.
+  # paths to the corresponding wav files
   AMI: amicorpus/{uri}/audio/{uri}.Mix-Headset.wav
   AMI-SDM: amicorpus/{uri}/audio/{uri}.Array1-01.wav
 
@@ -11,71 +31,71 @@ Protocols:
     SpeakerDiarization:
       only_words:
         train:
-            uri: ../lists/train.meetings.txt
-            annotation: ../only_words/rttms/train/{uri}.rttm
-            annotated: ../uems/train/{uri}.uem
+            uri: ami_diarization_setup/lists/train.meetings.txt # list of all training sessions (uttrances)
+            annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
+            annotated: ami_diarization_setup/uems/train/{uri}.uem
         development:
-            uri: ../lists/dev.meetings.txt
-            annotation: ../only_words/rttms/dev/{uri}.rttm
-            annotated: ../uems/dev/{uri}.uem
+            uri: ami_diarization_setup/lists/dev.meetings.txt
+            annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
+            annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
-            uri: ../lists/test.meetings.txt
-            annotation: ../only_words/rttms/test/{uri}.rttm
-            annotated: ../uems/test/{uri}.uem
+            uri: ami_diarization_setup/lists/test.meetings.txt
+            annotation: ami_diarization_setup/only_words/rttms/test/{uri}.rttm
+            annotated: ami_diarization_setup/uems/test/{uri}.uem
       mini:
         train:
-          uri: ../lists/train.mini.txt
-          annotation: ../only_words/rttms/train/{uri}.rttm
-          annotated: ../uems/train/{uri}.uem
+          uri: ami_diarization_setup/lists/train.mini.txt
+          annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
+          annotated: ami_diarization_setup/uems/train/{uri}.uem
         development:
-          uri: ../lists/dev.mini.txt
-          annotation: ../only_words/rttms/dev/{uri}.rttm
-          annotated: ../uems/dev/{uri}.uem
+          uri: ami_diarization_setup/lists/dev.mini.txt
+          annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
+          annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
-          uri: ../lists/test.mini.txt
-          annotation: ../only_words/rttms/test/{uri}.rttm
-          annotated: ../uems/test/{uri}.uem
+          uri: ami_diarization_setup/lists/test.mini.txt
+          annotation: ami_diarization_setup/only_words/rttms/test/{uri}.rttm
+          annotated: ami_diarization_setup/uems/test/{uri}.uem
 
   AMI:
     SpeakerDiarization:
       only_words:
         train:
-            uri: ../lists/train.meetings.txt
-            annotation: ../only_words/rttms/train/{uri}.rttm
-            annotated: ../uems/train/{uri}.uem
+            uri: ami_diarization_setup/lists/train.meetings.txt
+            annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
+            annotated: ami_diarization_setup/uems/train/{uri}.uem
         development:
-            uri: ../lists/dev.meetings.txt
-            annotation: ../only_words/rttms/dev/{uri}.rttm
-            annotated: ../uems/dev/{uri}.uem
+            uri: ami_diarization_setup/lists/dev.meetings.txt
+            annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
+            annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
-            uri: ../lists/test.meetings.txt
-            annotation: ../only_words/rttms/test/{uri}.rttm
-            annotated: ../uems/test/{uri}.uem
+            uri: ami_diarization_setup/lists/test.meetings.txt
+            annotation: ami_diarization_setup/only_words/rttms/test/{uri}.rttm
+            annotated: ami_diarization_setup/uems/test/{uri}.uem
 
       mini:
         train:
-          uri: ../lists/train.mini.txt
-          annotation: ../only_words/rttms/train/{uri}.rttm
-          annotated: ../uems/train/{uri}.uem
+          uri: ami_diarization_setup/lists/train.mini.txt
+          annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
+          annotated: ami_diarization_setup/uems/train/{uri}.uem
         development:
-          uri: ../lists/dev.mini.txt
-          annotation: ../only_words/rttms/dev/{uri}.rttm
-          annotated: ../uems/dev/{uri}.uem
+          uri: ami_diarization_setup/lists/dev.mini.txt
+          annotation: ami_diarization_setup/only_words/rttms/dev/{uri}.rttm
+          annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
-          uri: ../lists/test.mini.txt
-          annotation: ../only_words/rttms/test/{uri}.rttm
-          annotated: ../uems/test/{uri}.uem
+          uri: ami_diarization_setup/lists/test.mini.txt
+          annotation: ami_diarization_setup/only_words/rttms/test/{uri}.rttm
+          annotated: ami_diarization_setup/uems/test/{uri}.uem
  
       word_and_vocalsounds:
         train:
-            uri: ../lists/train.meetings.txt
-            annotation: ../word_and_vocalsounds/rttms/train/{uri}.rttm
-            annotated: ../uems/train/{uri}.uem
+            uri: ami_diarization_setup/lists/train.meetings.txt
+            annotation: ami_diarization_setup/word_and_vocalsounds/rttms/train/{uri}.rttm
+            annotated: ami_diarization_setup/uems/train/{uri}.uem
         development:
-            uri: ../lists/dev.meetings.txt
-            annotation: ../word_and_vocalsounds/rttms/dev/{uri}.rttm
-            annotated: ../uems/dev/{uri}.uem
+            uri: ami_diarization_setup/lists/dev.meetings.txt
+            annotation: ami_diarization_setup/word_and_vocalsounds/rttms/dev/{uri}.rttm
+            annotated: ami_diarization_setup/uems/dev/{uri}.uem
         test:
-            uri: ../lists/test.meetings.txt
-            annotation: ../word_and_vocalsounds/rttms/test/{uri}.rttm
-            annotated: ../uems/test/{uri}.uem
+            uri: ami_diarization_setup/lists/test.meetings.txt
+            annotation: ami_diarization_setup/word_and_vocalsounds/rttms/test/{uri}.rttm
+            annotated: ami_diarization_setup/uems/test/{uri}.uem
