@@ -22,8 +22,8 @@
 
 Databases:
   # paths to the corresponding wav files
-  AMI: amicorpus/{uri}/audio/{uri}.Mix-Headset.wav
-  AMI-SDM: amicorpus/{uri}/audio/{uri}.Array1-01.wav
+  AMI: downloads/amicorpus/{uri}/audio/{uri}.Mix-Headset.wav
+  AMI-SDM: downloads/amicorpus/{uri}/audio/{uri}.Array1-01.wav
 
 Protocols:
 
