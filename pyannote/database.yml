@@ -31,7 +31,7 @@ Protocols:
     SpeakerDiarization:
       only_words:
         train:
-            uri: ami_diarization_setup/lists/train.meetings.txt # list of all training sessions (uttrances)
+            uri: ami_diarization_setup/lists/train.meetings.txt # list of all training sessions
             annotation: ami_diarization_setup/only_words/rttms/train/{uri}.rttm
             annotated: ami_diarization_setup/uems/train/{uri}.uem
         development:
