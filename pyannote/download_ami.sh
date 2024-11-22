@@ -42,7 +42,6 @@ wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2009d/audio http://g
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2010a/audio http://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2010a/audio/ES2010a.Mix-Headset.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2010b/audio http://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2010b/audio/ES2010b.Mix-Headset.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2010c/audio http://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2010c/audio/ES2010c.Mix-Headset.wav
-wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2010d/audio http://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2010d/audio/ES2010d.Mix-Headset.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2011a/audio http://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2011a/audio/ES2011a.Mix-Headset.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2011b/audio http://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2011b/audio/ES2011b.Mix-Headset.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2011c/audio http://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2011c/audio/ES2011c.Mix-Headset.wav
