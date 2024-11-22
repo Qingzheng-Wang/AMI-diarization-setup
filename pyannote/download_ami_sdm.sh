@@ -43,7 +43,6 @@ wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2009d/audio https://
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2010a/audio https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2010a/audio/ES2010a.Array1-01.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2010b/audio https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2010b/audio/ES2010b.Array1-01.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2010c/audio https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2010c/audio/ES2010c.Array1-01.wav
-wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2010d/audio https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2010d/audio/ES2010d.Array1-01.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2011a/audio https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2011a/audio/ES2011a.Array1-01.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2011b/audio https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2011b/audio/ES2011b.Array1-01.wav
 wget --no-verbose --show-progress --continue -P $DLFOLDER/ES2011c/audio https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/ES2011c/audio/ES2011c.Array1-01.wav
